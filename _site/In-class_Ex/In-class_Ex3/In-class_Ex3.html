@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.1.189">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Hulwana">
+
+<title>ISSS624 - In-class Exercise 3</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">ISSS624</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-hands-on-exercises" role="button" data-bs-toggle="dropdown" aria-expanded="false">Hands-on Exercises</a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-hands-on-exercises">    
+        <li class="dropdown-header">Hands-on Exercise 1</li>
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-in-class-exercises" role="button" data-bs-toggle="dropdown" aria-expanded="false">In-class Exercises</a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-in-class-exercises">    
+        <li class="dropdown-header">In-class Exercise 1</li>
+        <li class="dropdown-header">In-class Exercise 2</li>
+        <li>
+    <a class="dropdown-item" href="../../In-class_Ex/In-class_Ex3/In-class_Ex3.html">
+ <span class="dropdown-text">In-class Exercise 3</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html">Home</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html">About</a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">1 Overview</a>
+  <ul class="collapse">
+  <li><a href="#learning-outcome" id="toc-learning-outcome" class="nav-link" data-scroll-target="#learning-outcome">1.1 Learning Outcome</a></li>
+  <li><a href="#getting-started" id="toc-getting-started" class="nav-link" data-scroll-target="#getting-started">1.2 Getting Started</a>
+  <ul class="collapse">
+  <li><a href="#the-analytical-question" id="toc-the-analytical-question" class="nav-link" data-scroll-target="#the-analytical-question">1.2.1 The analytical question</a></li>
+  </ul></li>
+  <li><a href="#the-data" id="toc-the-data" class="nav-link" data-scroll-target="#the-data">1.3 The Data</a>
+  <ul class="collapse">
+  <li><a href="#installing-and-loading-r-packages" id="toc-installing-and-loading-r-packages" class="nav-link" data-scroll-target="#installing-and-loading-r-packages">1.3.1 Installing and loading R packages</a></li>
+  </ul></li>
+  <li><a href="#data-import-and-preparation" id="toc-data-import-and-preparation" class="nav-link" data-scroll-target="#data-import-and-preparation">1.4 Data Import and Preparation</a>
+  <ul class="collapse">
+  <li><a href="#importing-geospatial-data-into-r-environment" id="toc-importing-geospatial-data-into-r-environment" class="nav-link" data-scroll-target="#importing-geospatial-data-into-r-environment">1.4.1 Importing geospatial data into R environment</a></li>
+  <li><a href="#importing-aespatial-data-into-r-environment" id="toc-importing-aespatial-data-into-r-environment" class="nav-link" data-scroll-target="#importing-aespatial-data-into-r-environment">1.4.2 Importing aespatial data into R environment</a></li>
+  <li><a href="#derive-new-variables-using-dplyr-package" id="toc-derive-new-variables-using-dplyr-package" class="nav-link" data-scroll-target="#derive-new-variables-using-dplyr-package">1.4.3 Derive new variables using dplyr package</a></li>
+  </ul></li>
+  <li><a href="#exploratory-data-analysis-eda" id="toc-exploratory-data-analysis-eda" class="nav-link" data-scroll-target="#exploratory-data-analysis-eda">1.5 Exploratory Data Analysis (EDA)</a>
+  <ul class="collapse">
+  <li><a href="#eda-using-statistical-graphics" id="toc-eda-using-statistical-graphics" class="nav-link" data-scroll-target="#eda-using-statistical-graphics">1.5.1 EDA using statistical graphics</a></li>
+  <li><a href="#eda-using-chloropleth-map" id="toc-eda-using-chloropleth-map" class="nav-link" data-scroll-target="#eda-using-chloropleth-map">1.5.2 EDA using chloropleth map</a></li>
+  </ul></li>
+  <li><a href="#correlation-analysis" id="toc-correlation-analysis" class="nav-link" data-scroll-target="#correlation-analysis">1.6 Correlation Analysis</a></li>
+  <li><a href="#hierarchy-cluster-analysis" id="toc-hierarchy-cluster-analysis" class="nav-link" data-scroll-target="#hierarchy-cluster-analysis">1.7 Hierarchy Cluster Analysis</a>
+  <ul class="collapse">
+  <li><a href="#extracting-clustering-variables" id="toc-extracting-clustering-variables" class="nav-link" data-scroll-target="#extracting-clustering-variables">1.7.1 Extracting clustering variables</a></li>
+  <li><a href="#data-standardization" id="toc-data-standardization" class="nav-link" data-scroll-target="#data-standardization">1.7.2 Data Standardization</a></li>
+  <li><a href="#visualizing-the-standardized-clustering-variables" id="toc-visualizing-the-standardized-clustering-variables" class="nav-link" data-scroll-target="#visualizing-the-standardized-clustering-variables">1.7.3 Visualizing the standardized clustering variables</a></li>
+  <li><a href="#computing-proximity-matrix" id="toc-computing-proximity-matrix" class="nav-link" data-scroll-target="#computing-proximity-matrix">1.7.4 Computing proximity matrix</a></li>
+  <li><a href="#computing-hierarchical-clustering" id="toc-computing-hierarchical-clustering" class="nav-link" data-scroll-target="#computing-hierarchical-clustering">1.7.5 Computing hierarchical clustering</a></li>
+  <li><a href="#selecting-the-optimal-clustering-algorithm" id="toc-selecting-the-optimal-clustering-algorithm" class="nav-link" data-scroll-target="#selecting-the-optimal-clustering-algorithm">1.7.6 Selecting the optimal clustering algorithm</a></li>
+  <li><a href="#determining-optimal-clusters" id="toc-determining-optimal-clusters" class="nav-link" data-scroll-target="#determining-optimal-clusters">1.7.7 Determining Optimal Clusters</a></li>
+  <li><a href="#interpreting-the-dendrograms" id="toc-interpreting-the-dendrograms" class="nav-link" data-scroll-target="#interpreting-the-dendrograms">1.7.8 Interpreting the Dendrograms</a></li>
+  <li><a href="#visually-driven-hierarchical-clustering-analysis" id="toc-visually-driven-hierarchical-clustering-analysis" class="nav-link" data-scroll-target="#visually-driven-hierarchical-clustering-analysis">1.7.9 Visually-driven hierarchical clustering analysis</a></li>
+  <li><a href="#mapping-the-clusters-formed" id="toc-mapping-the-clusters-formed" class="nav-link" data-scroll-target="#mapping-the-clusters-formed">1.7.10 Mapping the clusters formed</a></li>
+  </ul></li>
+  <li><a href="#spatially-constrained-clustering---skater-approach" id="toc-spatially-constrained-clustering---skater-approach" class="nav-link" data-scroll-target="#spatially-constrained-clustering---skater-approach">1.8 Spatially Constrained Clustering - SKATER approach</a>
+  <ul class="collapse">
+  <li><a href="#converting-into-spatialpolygonsdataframe" id="toc-converting-into-spatialpolygonsdataframe" class="nav-link" data-scroll-target="#converting-into-spatialpolygonsdataframe">1.8.1 Converting into SpatialPolygonsDataFrame</a></li>
+  <li><a href="#computing-neighbour-list" id="toc-computing-neighbour-list" class="nav-link" data-scroll-target="#computing-neighbour-list">1.8.2. Computing Neighbour List</a></li>
+  <li><a href="#computing-minimum-spanning-tree" id="toc-computing-minimum-spanning-tree" class="nav-link" data-scroll-target="#computing-minimum-spanning-tree">1.8.3 Computing Minimum Spanning Tree</a></li>
+  <li><a href="#computing-spatially-constrained-clusters-using-skater-method" id="toc-computing-spatially-constrained-clusters-using-skater-method" class="nav-link" data-scroll-target="#computing-spatially-constrained-clusters-using-skater-method">1.8.4 Computing spatially constrained clusters using SKATER method</a></li>
+  <li><a href="#visualizing-the-clusters" id="toc-visualizing-the-clusters" class="nav-link" data-scroll-target="#visualizing-the-clusters">1.8.5 Visualizing the clusters</a></li>
+  </ul></li>
+  <li><a href="#spatially-constrained-clustering-clustgeo-method" id="toc-spatially-constrained-clustering-clustgeo-method" class="nav-link" data-scroll-target="#spatially-constrained-clustering-clustgeo-method">1.9 Spatially Constrained Clustering ClustGeo Method</a>
+  <ul class="collapse">
+  <li><a href="#ward-like-hierarchical-clustering-clustgeo" id="toc-ward-like-hierarchical-clustering-clustgeo" class="nav-link" data-scroll-target="#ward-like-hierarchical-clustering-clustgeo">1.9.1 Ward-like hierarchical clustering: ClustGeo</a></li>
+  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"></a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">In-class Exercise 3</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Hulwana </p>
+          </div>
+  </div>
+    
+    
+  </div>
+  
+
+</header>
+
+<section id="overview" class="level1">
+<h1>1 Overview</h1>
+<p>In this hands-on exercise, we will delineate homogeneous region by using geographically referenced multivariate data. There are two major analysis, namely:</p>
+<ul>
+<li><p>hierarchical cluster analysis; and</p></li>
+<li><p>spatially constrained cluster analysis.</p></li>
+</ul>
+<section id="learning-outcome" class="level2">
+<h2 class="anchored" data-anchor-id="learning-outcome">1.1 Learning Outcome</h2>
+<p>The outcome of this exercise is as outline below:</p>
+<ul>
+<li><p>to convert GIS polygon data into R’s simple feature data.frame by using appropriate functions of <strong>sf</strong> package of R;</p></li>
+<li><p>to convert simple feature data.frame into R’s SpatialPolygonDataFrame object by using appropriate <strong>sf</strong> of package of R;</p></li>
+<li><p>to perform custer analysis by using <em>hclust()</em> of Base R;</p></li>
+<li><p>to perform spatially constrained cluster analysis using <em>skater()</em> of Base R; and</p></li>
+<li><p>to visualise the analysis output by using <strong>ggplot2</strong> and <strong>tmap</strong> package.</p></li>
+</ul>
+</section>
+<section id="getting-started" class="level2">
+<h2 class="anchored" data-anchor-id="getting-started">1.2 Getting Started</h2>
+<section id="the-analytical-question" class="level3">
+<h3 class="anchored" data-anchor-id="the-analytical-question">1.2.1 The analytical question</h3>
+<p>In geobusiness and spatial policy, it is a common practice to delineate the market or planning area into homogeneous regions by using multivariate data. In this hands-on exercise, we are interested to delineate <a href="https://en.wikipedia.org/wiki/Shan_State">Shan State</a>, <a href="https://en.wikipedia.org/wiki/Myanmar">Myanmar</a> into homogeneous regions by using multiple Information and Communication technology (ICT) measures, namely: Radio, Television, Land line phone, Mobile phone, Computer, and Internet at home.</p>
+</section>
+</section>
+<section id="the-data" class="level2">
+<h2 class="anchored" data-anchor-id="the-data">1.3 The Data</h2>
+<p>Two data sets will be used in this study. They are:</p>
+<ul>
+<li><p>Myanmar Township Boundary Data (i.e.&nbsp;<em>myanmar_township_boundaries</em>) : This is a GIS data in ESRI shapefile format. It consists of township boundary information of Myanmar. The spatial data are captured in polygon features.</p></li>
+<li><p><em>Shan-ICT.csv</em>: This is an extract of <a href="https://myanmar.unfpa.org/en/publications/2014-population-and-housing-census-myanmar-data-sheet"><strong>The 2014 Myanmar Population and Housing Census Myanmar</strong></a> at the township level.</p></li>
+</ul>
+<p>Both data sets are download from <a href="http://themimu.info/">Myanmar Information Management Unit (MIMU)</a></p>
+<section id="installing-and-loading-r-packages" class="level3">
+<h3 class="anchored" data-anchor-id="installing-and-loading-r-packages">1.3.1 Installing and loading R packages</h3>
+<p>Before we get started, it is important for us to install the necessary R packages into R and launch these R packages into R environment.</p>
+<p>The R packages needed for this exercise are as follows:</p>
+<ul>
+<li><p>Spatial data handling</p>
+<ul>
+<li><strong>sf</strong>, <strong>rgdal</strong> and <strong>spdep</strong></li>
+</ul></li>
+<li><p>Attribute data handling</p>
+<ul>
+<li><strong>tidyverse</strong>, especially <strong>readr</strong>, <strong>ggplot2</strong> and <strong>dplyr</strong></li>
+</ul></li>
+<li><p>Choropleth mapping</p>
+<ul>
+<li><strong>tmap</strong></li>
+</ul></li>
+<li><p>Multivariate data visualisation and analysis</p>
+<ul>
+<li><strong>coorplot</strong> (to build correlation plot), <strong>ggpubr</strong> (to glue out multiple charts together), and <strong>heatmaply</strong> (to plot heatmaps)</li>
+</ul></li>
+<li><p>Cluster analysis</p>
+<ul>
+<li><p><strong>cluster</strong></p></li>
+<li><p><strong>ClustGeo (spatially clustering algorithm)</strong></p></li>
+<li><p><strong>factoextra</strong> (for factor analysis)</p></li>
+<li><p><strong>NbClust</strong> ( to access hierarchical clustering results)</p></li>
+</ul></li>
+</ul>
+<p>The code chunks below installs and launches these R packages into R environment.</p>
+<div class="cell">
+
+</div>
+</section>
+</section>
+<section id="data-import-and-preparation" class="level2">
+<h2 class="anchored" data-anchor-id="data-import-and-preparation">1.4 Data Import and Preparation</h2>
+<section id="importing-geospatial-data-into-r-environment" class="level3">
+<h3 class="anchored" data-anchor-id="importing-geospatial-data-into-r-environment">1.4.1 Importing geospatial data into R environment</h3>
+<p>We will import Myanmar Township Boundary GIS data and its associated attrbiute table into R environment.</p>
+<p>The Myanmar Township Boundary GIS data is in ESRI shapefile format. It will be imported into R environment by using the <a href="https://www.rdocumentation.org/packages/sf/versions/0.7-2/topics/st_read"><em>st_read()</em></a> function of <strong>sf</strong>.</p>
+<p>The code chunks used are shown below:</p>
+<div class="cell">
+
+</div>
+<p>From the above output, we notice that there are 330 observations with 14 variables but after filtering we see that 55 observations is retained with 14 variables as seen by the result of shan_sf below.</p>
+<p>The imported township boundary object is called <em>shan_sf</em>. It is saved in <strong>simple feature data.frame</strong> format. We can view the content of the newly created <em>shan_sf</em> simple features data.frame by using the code chunk below.</p>
+<div class="cell">
+
+</div>
+<p>Notice that sf.data.frame is conformed to Hardy Wickham’s <a href="https://edzer.github.io/rstudio_conf/#1">tidy</a> framework.</p>
+<p>Since <em>shan_sf</em> is conformed to tidy framework, we can also <em>glimpse()</em> to reveal the data type of it’s fields.</p>
+<div class="cell">
+
+</div>
+</section>
+<section id="importing-aespatial-data-into-r-environment" class="level3">
+<h3 class="anchored" data-anchor-id="importing-aespatial-data-into-r-environment">1.4.2 Importing aespatial data into R environment</h3>
+<p>The csv file will be import using <em>read_csv</em> function of <strong>readr</strong> package. We use this to retai the field names as what it was originally in the raw file. If we used read.csv it will convert spaces in the field names into “.”. For example “District Pcode” will become “District.Pcode”.</p>
+<p>The code chunks used are shown below:</p>
+<div class="cell">
+
+</div>
+<p>The imported InfoComm variables are extracted from <strong>The 2014 Myanmar Population and Housing Census Myanmar</strong>. The attribute data set is called <em>ict</em>. It is saved in R’s * tibble data.frame* format.</p>
+<p>The code chunk below reveal the summary statistics of <em>ict</em> data.frame.</p>
+<div class="cell">
+
+</div>
+<p>There are a total of eleven fields and 55 observation in the tibble data.frame.</p>
+</section>
+<section id="derive-new-variables-using-dplyr-package" class="level3">
+<h3 class="anchored" data-anchor-id="derive-new-variables-using-dplyr-package">1.4.3 Derive new variables using dplyr package</h3>
+<p>The unit of measurement of the values are number of household. Using these values directly will be bias by the underlying total number of households. In general, the townships with relatively higher total number of households will also have higher number of households owning radio, TV, etc.</p>
+<p>In order to overcome this problem, we will derive the penetration rate of each ICT variable by using the code chunk below. We divide by 1000 instead of 100 as we want to see at “per 1000 household” level. We will also rename the fields, so that it will be easier to do the relational join with shan_sf.</p>
+<div class="cell">
+
+</div>
+<p>Let us review the summary statistics of the newly derived penetration rates using the code chunk below.</p>
+<div class="cell">
+
+</div>
+<p>Notice that six new fields have been added into the data.frame. They are RADIO_PR, TV_PR, LLPHONE_PR, MPHONE_PR, COMPUTER_PR, and INTERNET_PR.</p>
+</section>
+</section>
+<section id="exploratory-data-analysis-eda" class="level2">
+<h2 class="anchored" data-anchor-id="exploratory-data-analysis-eda">1.5 Exploratory Data Analysis (EDA)</h2>
+<section id="eda-using-statistical-graphics" class="level3">
+<h3 class="anchored" data-anchor-id="eda-using-statistical-graphics">1.5.1 EDA using statistical graphics</h3>
+<p>We can plot the distribution of the variables (i.e.&nbsp;Number of households with radio) by using appropriate Exploratory Data Analysis (EDA) as shown in the code chunk below.</p>
+<p>Histogram is useful to identify the overall distribution of the data values (i.e.&nbsp;left skew, right skew or normal distribution)</p>
+<div class="cell">
+
+</div>
+<p>Boxplot is useful to detect if there are outliers.</p>
+<div class="cell">
+
+</div>
+<p>Next, we will also plotting the distribution of the newly derived variables (i.e.&nbsp;Radio penetration rate) by using the code chunk below.</p>
+<div class="cell">
+
+</div>
+<div class="cell">
+
+</div>
+<p>The code chunks below are used to create the data visualisation. They consist of two main parts. First, we will create the individual histograms using the code chunk below. In the figure below, multiple histograms are plotted to reveal the distribution of the selected variables in the <em>ict_derived</em> data.frame.</p>
+<div class="cell">
+
+</div>
+<p>Next, the <a href="https://rpkgs.datanovia.com/ggpubr/reference/ggarrange.html"><em>ggarange()</em></a> function of <a href="https://rpkgs.datanovia.com/ggpubr/"><strong>ggpubr</strong></a> package is used to group these histograms together.</p>
+<div class="cell">
+
+</div>
+</section>
+<section id="eda-using-chloropleth-map" class="level3">
+<h3 class="anchored" data-anchor-id="eda-using-chloropleth-map">1.5.2 EDA using chloropleth map</h3>
+<section id="joining-geospatial-data-with-aspatial-data" class="level4">
+<h4 class="anchored" data-anchor-id="joining-geospatial-data-with-aspatial-data">1.5.2.1 Joining geospatial data with aspatial data</h4>
+<p>Before we can prepare the choropleth map, we need to combine both the geospatial data object (i.e.&nbsp;<em>shan_sf</em>) and aspatial data.frame object (i.e.&nbsp;<em>ict_derived</em>) into one. This will be performed by using the <a href="https://dplyr.tidyverse.org/reference/join.tbl_df.html"><em>left_join</em></a> function of <strong>dplyr</strong> package. The <em>shan_sf</em> simple feature data.frame will be used as the base data object and the <em>ict_derived</em> data.frame will be used as the join table.</p>
+<p>The code chunks below is used to perform the task. The unique identifier used to join both data objects is <em>TS_PCODE</em>.</p>
+<p>NOTE: When joining a geospatial data attribute data and if we want to retain the geometric properties, then we need to specify the geospatial data first (the left file) when executing the left join.</p>
+<div class="cell">
+
+</div>
+<p>The message above shows that <em>TS_CODE</em> field is the common field used to perform the left-join.</p>
+<p>It is important to note that there is no new output data been created. Instead, the data fields from <em>ict_derived</em> data frame are now updated into the data frame of <em>shan_sf</em>.</p>
+</section>
+<section id="preparing-chloropleth-map" class="level4">
+<h4 class="anchored" data-anchor-id="preparing-chloropleth-map">1.5.2.2 Preparing chloropleth map</h4>
+<p>To have a quick look at the distribution of Radio penetration rate of Shan State at township level, a choropleth map will be prepared.</p>
+<p>The code chunks below are used to prepare the choroplethby using the <em>qtm()</em> function of <strong>tmap</strong> package.</p>
+<div class="cell">
+
+</div>
+<p>In order to reveal the distribution shown in the choropleth map above are bias to the underlying total number of households at the townships, we will create two choropleth maps, one for the total number of households (i.e.&nbsp;TT_HOUSEHOLDS.map) and one for the total number of household with Radio (RADIO.map) by using the code chunk below.</p>
+<div class="cell">
+
+</div>
+<p>Notice that the choropleth maps above clearly show that townships with relatively larger number of households are also showing relatively higher number of radio ownership.</p>
+<p>Now let us plot the choropleth maps showing the dsitribution of total number of households and Radio penetration rate by using the code chunk below.</p>
+<div class="cell">
+
+</div>
+<p>To compare the number of radio against the penetration rate, we shall plot the 2 graphs side-by-side, using the following code;</p>
+<div class="cell">
+
+</div>
+<p>Insights:</p>
+<p>Notice that although areas 72 and 100 belong to the group with the lower number of radio, it has the one of the highest radio penetration rate.</p>
+</section>
+</section>
+</section>
+<section id="correlation-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="correlation-analysis">1.6 Correlation Analysis</h2>
+<p>Before we perform cluster analysis, it is important for us to ensure that the cluster variables are not highly correlated.</p>
+<p>In this section, you will learn how to use <a href="https://cran.r-project.org/web/packages/corrplot/corrplot.pdf"><em>corrplot.mixed()</em></a> function of <a href="https://cran.r-project.org/web/packages/corrplot/vignettes/corrplot-intro.html"><strong>corrplot</strong></a> package to visualise and analyse the correlation of the input variables.</p>
+<div class="cell">
+
+</div>
+<p>The darker the blue or the red is, the stringer the correlation is between the 2 variables. The size of the ellipses also tells us how stronly is the correlation is. The thinner the ellipses, the stronger the correlation.</p>
+<p>The correlation plot above shows that COMPUTER_PR and INTERNET_PR are highly correlated with a correlation value greater than 0.8. This suggest that only one of them should be used in the cluster analysis instead of both.</p>
+</section>
+<section id="hierarchy-cluster-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="hierarchy-cluster-analysis">1.7 Hierarchy Cluster Analysis</h2>
+<p>In this section, we will learn how to perform hierarchical cluster analysis. The analysis consists of four major steps:</p>
+<section id="extracting-clustering-variables" class="level3">
+<h3 class="anchored" data-anchor-id="extracting-clustering-variables">1.7.1 Extracting clustering variables</h3>
+<p>The code chunk below will be used to extract the clustering variables from the <em>shan_sf</em> simple feature object into data.frame. We do not take in the geometric details as hierarchical clustering does not consider geospatial data.</p>
+<p>We include the code “st_set_geometry(NULL)” so as to exclude the geometry data from the dataframe in order to successfully run the hierarchical clustering.</p>
+<div class="cell">
+
+</div>
+<p>Notice that the final clustering variables list does not include variable INTERNET_PR because it is highly correlated with variable COMPUTER_PR.</p>
+<p>Next, we need to change the rows by township name instead of row number by using the code chunk below:</p>
+<div class="cell">
+
+</div>
+<p>Notice that the row number has been replaced into the township name to be the row name. This is because in hierarchical clustering does not need the township name when doing the clustering. However, since we need to reference back to the township name when we deduce the insights thus we retain it as the rownames/ object id.</p>
+<p>Now, we will delete the TS.x field by using the code chunk below.</p>
+<div class="cell">
+
+</div>
+</section>
+<section id="data-standardization" class="level3">
+<h3 class="anchored" data-anchor-id="data-standardization">1.7.2 Data Standardization</h3>
+<p>In general, multiple variables will be used in cluster analysis. It is not unusual their values range are different. In order to avoid the cluster analysis result is baised to clustering variables with large values, it is useful to standardise the input variables before performing cluster analysis.</p>
+<section id="min-max-standardization" class="level4">
+<h4 class="anchored" data-anchor-id="min-max-standardization">1.7.2.1 Min-Max standardization</h4>
+<p>In the code chunk below, <em>normalize()</em> of <a href="https://cran.r-project.org/web/packages/heatmaply/"><em>heatmaply</em></a> package is used to stadardisation the clustering variables by using Min-Max method. The <em>summary()</em> is then used to display the summary statistics of the standardised clustering variables.</p>
+<div class="cell">
+
+</div>
+<p>Notice that the values range of the Min-max standardized clustering variables are 0-1 now.</p>
+</section>
+<section id="z-score-standardization" class="level4">
+<h4 class="anchored" data-anchor-id="z-score-standardization">1.7.2.2 Z-score standardization</h4>
+<p>Z-score standardization can be performed easily by using <a href="https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/scale"><em>scale()</em></a> of Base R. The code chunk below will be used to stadardization the clustering variables by using Z-score method.</p>
+<div class="cell">
+
+</div>
+<p>Notice the mean and standard deviation of the Z-score standardised clustering variables are 0 and 1 respectively.</p>
+<p><strong>Note:</strong> <a href="https://www.rdocumentation.org/packages/Hmisc/versions/4.4-0/topics/describe"><em>describe()</em></a> of <a href="https://cran.r-project.org/web/packages/psych/"><strong>psych</strong></a> package is used here instead of <em>summary()</em> of Base R because the earlier provides standard deviation.</p>
+<p><strong><em>Warning: Z-score standardisation method should only be used if we would assume all variables come from some normal distribution.</em></strong></p>
+</section>
+</section>
+<section id="visualizing-the-standardized-clustering-variables" class="level3">
+<h3 class="anchored" data-anchor-id="visualizing-the-standardized-clustering-variables">1.7.3 Visualizing the standardized clustering variables</h3>
+<p>Beside reviewing the summary statistics of the standardised clustering variables, it is also a good practice to visualise their distribution graphical.</p>
+<p>The code chunk below plot the scaled <em>Radio_PR</em> field.</p>
+<div class="cell">
+
+</div>
+<p>Notice that the overall distribution of the clustering variables will change after the data standardisation. Hence, it is advisible <strong>NOT</strong> to perform data standardisation if the values range of the clustering variables are not very large.</p>
+</section>
+<section id="computing-proximity-matrix" class="level3">
+<h3 class="anchored" data-anchor-id="computing-proximity-matrix">1.7.4 Computing proximity matrix</h3>
+<p>In R, many packages provide functions to calculate distance matrix. We will compute the proximity matrix by using <a href="https://stat.ethz.ch/R-manual/R-devel/library/stats/html/dist.html"><em>dist()</em></a> of R.</p>
+<p><em>dist()</em> supports six distance proximity calculations, they are: <strong>euclidean, maximum, manhattan, canberra, binary and minkowski</strong>. The default is <em>euclidean</em> proximity matrix.</p>
+<p>The code chunk below is used to compute the proximity matrix using <em>euclidean</em> method.</p>
+<div class="cell">
+
+</div>
+<p>The code chunk below can then be used to list the content of <em>proxmat</em> for visual inspection.</p>
+<div class="cell">
+
+</div>
+</section>
+<section id="computing-hierarchical-clustering" class="level3">
+<h3 class="anchored" data-anchor-id="computing-hierarchical-clustering">1.7.5 Computing hierarchical clustering</h3>
+<p>In R, there are several packages provide hierarchical clustering function. In this hands-on exercise, <a href="https://stat.ethz.ch/R-manual/R-devel/library/stats/html/hclust.html"><em>hclust()</em></a> of R stats will be used.</p>
+<p><em>hclust()</em> employed agglomeration method to compute the cluster. Eight clustering algorithms are supported, they are: ward.D, ward.D2, single, complete, average(UPGMA), mcquitty(WPGMA), median(WPGMC) and centroid(UPGMC).</p>
+<p>The code chunk below performs hierarchical cluster analysis using ward.D method. The hierarchical clustering output is stored in an object of class <strong>hclust</strong> which describes the tree produced by the clustering process.</p>
+<div class="cell">
+
+</div>
+<p>We can then plot the tree by using <em>plot()</em> of R Graphics as shown in the code chunk below.</p>
+<p>By specifying that cex = 0.6 is to scale down the resolution by 60% so as to enable easier reading of the cluster group in the dendogram.</p>
+<div class="cell">
+
+</div>
+</section>
+<section id="selecting-the-optimal-clustering-algorithm" class="level3">
+<h3 class="anchored" data-anchor-id="selecting-the-optimal-clustering-algorithm">1.7.6 Selecting the optimal clustering algorithm</h3>
+<p>One of the challenge in performing hierarchical clustering is to identify stronger clustering structures. The issue can be solved by using use <a href="https://www.rdocumentation.org/packages/cluster/versions/2.1.0/topics/agnes"><em>agnes()</em></a> function of <a href="https://cran.r-project.org/web/packages/cluster/"><strong>cluster</strong></a> package. It functions like <em>hclus()</em>, however, with the <em>agnes()</em> function you can also get the agglomerative coefficient, which measures the amount of clustering structure found (values closer to 1 suggest strong clustering structure).</p>
+<p>The code chunk below will be used to compute the agglomerative coefficients of all hierarchical clustering algorithms.</p>
+<div class="cell">
+
+</div>
+<p>With reference to the output above, we can see that Ward’s method provides the strongest clustering structure among the four methods assessed. Hence, in the subsequent analysis, only Ward’s method will be used.</p>
+</section>
+<section id="determining-optimal-clusters" class="level3">
+<h3 class="anchored" data-anchor-id="determining-optimal-clusters">1.7.7 Determining Optimal Clusters</h3>
+<p>Another technical challenge face by data analyst in performing clustering analysis is to determine the optimal clusters to retain.</p>
+<p>There are <a href="https://www.datanovia.com/en/lessons/determining-the-optimal-number-of-clusters-3-must-know-methods/">three</a> commonly used methods to determine the optimal clusters, they are:</p>
+<ul>
+<li><p><a href="https://en.wikipedia.org/wiki/Elbow_method_(clustering)">Elbow Method</a></p></li>
+<li><p><a href="https://www.sciencedirect.com/science/article/pii/0377042787901257?via%3Dihub">Average Silhouette Method</a></p></li>
+<li><p><a href="https://statweb.stanford.edu/~gwalther/gap">Gap Statistic Method</a></p></li>
+</ul>
+<section id="gap-statistic-method" class="level4">
+<h4 class="anchored" data-anchor-id="gap-statistic-method">1.7.7.1 Gap Statistic Method</h4>
+<p>The <a href="http://www.web.stanford.edu/~hastie/Papers/gap.pdf"><strong>gap statistic</strong></a> compares the total within intra-cluster variation for different values of k with their expected values under null reference distribution of the data. The estimate of the optimal clusters will be value that maximize the gap statistic (i.e., that yields the largest gap statistic). This means that the clustering structure is far away from the random uniform distribution of points.</p>
+<p>To compute the gap statistic, <a href="https://www.rdocumentation.org/packages/cluster/versions/2.1.0/topics/clusGap"><em>clusGap()</em></a> of <a href="https://cran.r-project.org/web/packages/cluster/"><strong>cluster</strong></a> package will be used.</p>
+<div class="cell">
+
+</div>
+<p>Also note that the <a href="https://rpkgs.datanovia.com/factoextra/reference/hcut.html"><em>hcut</em></a> function used is from <a href="https://rpkgs.datanovia.com/factoextra/"><strong>factoextra</strong></a> package.</p>
+<p>Next, we can visualize the plot by using <a href="https://rpkgs.datanovia.com/factoextra/reference/fviz_nbclust.html"><em>fviz_gap_stat()</em></a> of <a href="https://rpkgs.datanovia.com/factoextra/"><strong>factoextra</strong></a> package.</p>
+<div class="cell">
+
+</div>
+<p>With reference to the gap statistic graph above, the recommended number of cluster to retain is 1. However, it is not logical to retain only one cluster. By examine the gap statistic graph, the 6-cluster gives the largest gap statistic and should be the next best cluster to pick.</p>
+<p><strong>Note:</strong> In addition to these commonly used approaches, the <a href="https://cran.r-project.org/web/packages/NbClust/">NbClust</a> package, published by Charrad et al., 2014, provides 30 indices for determining the relevant number of clusters and proposes to users the best clustering scheme from the different results obtained by varying all combinations of number of clusters, distance measures, and clustering methods.</p>
+</section>
+</section>
+<section id="interpreting-the-dendrograms" class="level3">
+<h3 class="anchored" data-anchor-id="interpreting-the-dendrograms">1.7.8 Interpreting the Dendrograms</h3>
+<p>In the dendrogram displayed above, each leaf corresponds to one observation. As we move up the tree, observations that are similar to each other are combined into branches, which are themselves fused at a higher height.</p>
+<p>The height of the fusion, provided on the vertical axis, indicates the (dis)similarity between two observations. The higher the height of the fusion, the less similar the observations are. Note that, conclusions about the proximity of two observations can be drawn only based on the height where branches containing those two observations first are fused. We cannot use the proximity of two observations along the horizontal axis as a criteria of their similarity.</p>
+<p>It’s also possible to draw the dendrogram with a border around the selected clusters by using <a href="https://stat.ethz.ch/R-manual/R-devel/library/stats/html/rect.hclust.html"><em>rect.hclust()</em></a> of R stats. The argument <em>border</em> is used to specify the border colors for the rectangles.</p>
+<div class="cell">
+
+</div>
+</section>
+<section id="visually-driven-hierarchical-clustering-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="visually-driven-hierarchical-clustering-analysis">1.7.9 Visually-driven hierarchical clustering analysis</h3>
+<p>In this section, we will learn how to perform visually-driven hiearchical clustering analysis by using <a href="https://cran.r-project.org/web/packages/heatmaply/"><em>heatmaply</em></a> package.</p>
+<p>With <strong>heatmaply</strong>, we are able to build both highly interactive cluster heatmap or static cluster heatmap.</p>
+<section id="transforming-the-data-frame-into-a-matrix" class="level4">
+<h4 class="anchored" data-anchor-id="transforming-the-data-frame-into-a-matrix">1.7.9.1 Transforming the data frame into a matrix</h4>
+<p>The data was loaded into a data frame, but it has to be a data matrix to make your heatmap.</p>
+<p>The code chunk below will be used to transform <em>shan_ict</em> data frame into a data matrix.</p>
+<div class="cell">
+
+</div>
+</section>
+<section id="plotting-interactive-cluster-heatmap-using-heatmaply" class="level4">
+<h4 class="anchored" data-anchor-id="plotting-interactive-cluster-heatmap-using-heatmaply">1.7.9.2 Plotting interactive cluster heatmap using <em>heatmaply()</em></h4>
+<p>In the code chunk below, the <a href="https://talgalili.github.io/heatmaply/reference/heatmaply.html"><em>heatmaply()</em></a> of <a href="https://talgalili.github.io/heatmaply/">heatmaply</a> package is used to build an interactive cluster heatmap.</p>
+<div class="cell">
+
+</div>
+</section>
+</section>
+<section id="mapping-the-clusters-formed" class="level3">
+<h3 class="anchored" data-anchor-id="mapping-the-clusters-formed">1.7.10 Mapping the clusters formed</h3>
+<p>With closed examination of the dendragram above, we have decided to retain six clusters.</p>
+<p><a href="https://stat.ethz.ch/R-manual/R-devel/library/stats/html/cutree.html"><em>cutree()</em></a> of R Base will be used in the code chunk below to derive a 6-cluster model.</p>
+<div class="cell">
+
+</div>
+<p>The output is called <em>groups</em>. It is a <em>list</em> object.</p>
+<p>In order to visualise the clusters, the <em>groups</em> object need to be appended onto <em>shan_sf</em> simple feature object.</p>
+<p>The code chunk below form the join in three steps:</p>
+<ul>
+<li><p>the <em>groups</em> list object will be converted into a matrix;</p></li>
+<li><p><em>cbind()</em> is used to append <em>groups</em> matrix onto shan_sf to produce an output simple feature object called <code>shan_sf_cluster</code>; and</p></li>
+<li><p><em>rename</em> of <strong>dplyr</strong> package is used to rename <em>as.matrix.groups</em> field as <em>CLUSTER</em>.</p></li>
+</ul>
+<div class="cell">
+
+</div>
+<p>Next, <em>qtm()</em> of <strong>tmap</strong> package is used to plot the choropleth map showing the cluster formed.</p>
+<div class="cell">
+
+</div>
+<p>The choropleth map above reveals the clusters are very fragmented. The is one of the major limitation when non-spatial clustering algorithm such as hierarchical cluster analysis method is used.</p>
+</section>
+</section>
+<section id="spatially-constrained-clustering---skater-approach" class="level2">
+<h2 class="anchored" data-anchor-id="spatially-constrained-clustering---skater-approach">1.8 Spatially Constrained Clustering - SKATER approach</h2>
+<p>In this section, you will learn how to derive spatially constrained cluster by using <a href="https://r-spatial.github.io/spdep/reference/skater.html"><em>skater()</em></a> method of <a href="https://r-spatial.github.io/spdep/"><strong>spdep</strong></a> package.</p>
+<section id="converting-into-spatialpolygonsdataframe" class="level3">
+<h3 class="anchored" data-anchor-id="converting-into-spatialpolygonsdataframe">1.8.1 Converting into SpatialPolygonsDataFrame</h3>
+<p>First, we need to convert <code>shan_sf</code> into SpatialPolygonsDataFrame. This is because SKATER function only support <strong>sp</strong> objects such as SpatialPolygonDataFrame.</p>
+<p>The code chunk below uses <a href="https://r-spatial.github.io/sf/reference/coerce-methods.html"><em>as_Spatial()</em></a> of <strong>sf</strong> package to convert <em>shan_sf</em> into a SpatialPolygonDataFrame called <em>shan_sp</em>.</p>
+<div class="cell">
+
+</div>
+</section>
+<section id="computing-neighbour-list" class="level3">
+<h3 class="anchored" data-anchor-id="computing-neighbour-list">1.8.2. Computing Neighbour List</h3>
+<p>Next, <a href="https://r-spatial.github.io/spdep/reference/poly2nb.html">poly2nd()</a> of <strong>spdep</strong> package will be used to compute the neighbours list from polygon list.</p>
+<div class="cell">
+
+</div>
+<p>We can plot the neighbours list on shan_sp by using the code chunk below. Since we now can plot the community area boundaries as well, we plot this graph on top of the map. The first plot command gives the boundaries. This is followed by the plot of the neighbor list object, with coordinates applied to the original SpatialPolygonDataFrame (Shan state township boundaries) to extract the centroids of the polygons. These are used as the nodes for the graph representation. We also set the color to blue and specify add=TRUE to plot the network on top of the boundaries.</p>
+<div class="cell">
+
+</div>
+<p>Note that if you plot the network first and then the boundaries, some of the areas will be clipped. This is because the plotting area is determined by the characteristics of the first plot. In this example, because the boundary map extends further than the graph, we plot it first.</p>
+</section>
+<section id="computing-minimum-spanning-tree" class="level3">
+<h3 class="anchored" data-anchor-id="computing-minimum-spanning-tree">1.8.3 Computing Minimum Spanning Tree</h3>
+<section id="calculating-edge-costs" class="level4">
+<h4 class="anchored" data-anchor-id="calculating-edge-costs">1.8.3.1 Calculating edge costs</h4>
+<p>Next, <a href="https://r-spatial.github.io/spdep/reference/nbcosts.html"><em>nbcosts()</em></a> of <strong>spdep</strong> package is used to compute the cost of each edge. It is the distance between it nodes. This function compute this distance using a data.frame with observations vector in each node.</p>
+<p>The code chunk below is used to compute the cost of each edge.</p>
+<p>lcosts captures the cost of space between the boudaries.</p>
+<div class="cell">
+
+</div>
+<p>For each observation, this gives the pairwise dissimilarity between its values on the five variables and the values for the neighbouring observation (from the neighbour list). Basically, this is the notion of a generalised weight for a spatial weights matrix.</p>
+<p>Next, We will incorporate these costs into a weights object in the same way as we did in the calculation of inverse of distance weights. In other words, we convert the neighbour list to a list weights object by specifying the just computed <strong><em>lcosts</em></strong> as the weights.</p>
+<p>In order to achieve this, <a href="https://r-spatial.github.io/spdep/reference/nb2listw.html"><em>nb2listw()</em></a> of <strong>spdep</strong> package is used as shown in the code chunk below.</p>
+<p>Note that we specify the <em>style</em> as <strong>B</strong> to make sure the cost values are not row-standardised.</p>
+<div class="cell">
+
+</div>
+</section>
+<section id="computing-mstree" class="level4">
+<h4 class="anchored" data-anchor-id="computing-mstree">1.8.3.2 Computing mstree()</h4>
+<p>The minimum spanning tree is computed by mean of the <a href="https://r-spatial.github.io/spdep/reference/mstree.html"><em>mstree()</em></a> of <strong>spdep</strong> package as shown in the code chunk below.</p>
+<div class="cell">
+
+</div>
+<p>After computing the MST, we can check its class and dimension by using the code chunk below.</p>
+<div class="cell">
+
+</div>
+<div class="cell">
+
+</div>
+<p>Note that the dimension is 54 and not 55. This is because the minimum spanning tree consists on n-1 edges (links) in order to traverse all the nodes.</p>
+<p>We can display the content of <em>shan.mst</em> by using <em>head()</em> as shown in the code chunk below</p>
+<div class="cell">
+
+</div>
+<p>The plot method for the MST include a way to show the observation numbers of the nodes in addition to the edge. As before, we plot this together with the township boundaries. We can see how the initial neighbour list is simplified to just one edge connecting each of the nodes, while passing through all the nodes.</p>
+<div class="cell">
+
+</div>
+</section>
+</section>
+<section id="computing-spatially-constrained-clusters-using-skater-method" class="level3">
+<h3 class="anchored" data-anchor-id="computing-spatially-constrained-clusters-using-skater-method">1.8.4 Computing spatially constrained clusters using SKATER method</h3>
+<p>The code chunk below compute the spatially constrained cluster using <a href="https://r-spatial.github.io/spdep/reference/skater.html"><em>skater()</em></a> of <strong>spdep</strong> package.</p>
+<p>When we cut it starts from 0, thus when we specify ‘ncuts = 5’ this means that we have 6 clusters.</p>
+<div class="cell">
+
+</div>
+<p>The <em>skater()</em> takes three mandatory arguments: - the first two columns of the MST matrix (i.e.&nbsp;not the cost), - the data matrix (to update the costs as units are being grouped), and - the number of cuts. Note: It is set to <strong>one less than the number of clusters</strong>. So, the value specified is <strong>not</strong> the number of clusters, but the number of cuts in the graph, one less than the number of clusters.</p>
+<p>The result of the <em>skater()</em> is an object of class <strong>skater</strong>. We can examine its contents by using the code chunk below.</p>
+<div class="cell">
+
+</div>
+<p>The most interesting component of this list structure is the groups vector containing the labels of the cluster to which each observation belongs (as before, the label itself is arbitary). This is followed by a detailed summary for each of the clusters in the edges.groups list. Sum of squares measures are given as ssto for the total and ssw to show the effect of each of the cuts on the overall criterion.</p>
+<p>We can check the cluster assignment by using the conde chunk below.</p>
+<div class="cell">
+
+</div>
+<p>We can find out how many observations are in each cluster by means of the table command. Parenthetially, we can also find this as the dimension of each vector in the lists contained in edges.groups. For example, the first list has node with dimension 12, which is also the number of observations in the first cluster.</p>
+<div class="cell">
+
+</div>
+<p>Lastly, we can also plot the pruned tree that shows the five clusters on top of the townshop area.</p>
+<p>If we want to the plot, then we should use the shapefile data.</p>
+<div class="cell">
+
+</div>
+</section>
+<section id="visualizing-the-clusters" class="level3">
+<h3 class="anchored" data-anchor-id="visualizing-the-clusters">1.8.5 Visualizing the clusters</h3>
+<p>The code chunk below is used to plot the newly derived clusters by using SKATER method.</p>
+<div class="cell">
+
+</div>
+<p>For easy comparison, it will be better to place both the hierarchical clustering and spatially constrained hierarchical clustering maps next to each other.</p>
+<div class="cell">
+
+</div>
+</section>
+</section>
+<section id="spatially-constrained-clustering-clustgeo-method" class="level2">
+<h2 class="anchored" data-anchor-id="spatially-constrained-clustering-clustgeo-method">1.9 Spatially Constrained Clustering ClustGeo Method</h2>
+<p>Choice alpha is to balance out the homogeneity of the attributes and the spatial component. Choice alpha compute at different range to be the cut off for the attribute space and geographical spaced.</p>
+<p>When alpha is 0, we are only considering the attribute space and exclude the geographical relationship. What we want is to balance both the attribute and spatial homogeneity.</p>
+<p>d0: this is the attribute matrix</p>
+<p>d1: is the spatial matrix, which is the contiguity matrix</p>
+<section id="ward-like-hierarchical-clustering-clustgeo" class="level3">
+<h3 class="anchored" data-anchor-id="ward-like-hierarchical-clustering-clustgeo">1.9.1 Ward-like hierarchical clustering: ClustGeo</h3>
+<p>ClustGeo package provides function called <code>hclustgeo()</code> to perform a typical Ward-like hierarchical clustering just like <code>hclust()</code> you learned in previous section.</p>
+<p>To perform non-spatially constrained hierarchical clustering, we only need to provide the function a dissimilarity matrix as shown in the code chunk below.</p>
+<p><strong>ClustGeo</strong> is rigid as it only consider ward method only for the clustering.</p>
+<div class="cell">
+
+</div>
+<p>Note that the dissimilarity matrix must be an object of class <code>dist</code>, i.e.&nbsp;an object obtained with the function <code>dist()</code>. For sample code chunk, please refer to <a href="https://r4gdsa.netlify.app/chap05.html#computing-proximity-matrix">5.7.6 Computing proximity matrix</a>.</p>
+<section id="mapping-the-clusters-formed-1" class="level4">
+<h4 class="anchored" data-anchor-id="mapping-the-clusters-formed-1">1.9.1.1 Mapping the clusters formed</h4>
+<div class="cell">
+
+</div>
+</section>
+</section>
+<section id="section" class="level3">
+<h3 class="anchored" data-anchor-id="section"></h3>
+<p>1.9.2 Spatially Constrained Hierarchical Clustering</p>
+<p>Before we can performed spatially constrained hierarchical clustering, a spatial distance matrix will be derived by using <a href="https://r-spatial.github.io/sf/reference/geos_measures.html"><code>st_distance()</code></a> of sf package.</p>
+<div class="cell">
+
+</div>
+<p>Notice that <code>as.dist()</code> is used to convert the data frame into matrix.</p>
+<p>Next, <code>choicealpha()</code> will be used to determine a suitable value for the mixing parameter alpha as shown in the code chunk below.</p>
+<div class="cell">
+
+</div>
+<p>With reference to the graphs above, alpha = 0.3 will be used as shown in the code chunk below.</p>
+<div class="cell">
+
+</div>
+<p>Next, <code>cutree()</code> is used to derive the cluster objecct.</p>
+<div class="cell">
+
+</div>
+<p>We will then join back the group list with <em>shan_sf</em> polygon feature data frame by using the code chunk below.</p>
+<div class="cell">
+
+</div>
+<p>We can now plot the map of the newly delineated spatially constrained clusters.</p>
+<div class="cell">
+
+</div>
+
+
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
